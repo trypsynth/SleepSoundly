@@ -10,7 +10,7 @@ constexpr UINT ID_TRAY_ICON = 1001;
 constexpr UINT WM_TRAYICON = WM_USER + 1;
 constexpr UINT ID_EXIT = 2001;
 constexpr const char* WND_CLASS_NAME = "SleepSoundlyWndClass";
-constexpr const char* TRAY_TIP = "sleep_soundly";
+constexpr const char* TRAY_TIP = "Sleep Soundly";
 
 HINSTANCE h_inst;
 HWND h_wnd;
