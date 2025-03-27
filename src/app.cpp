@@ -1,7 +1,7 @@
 #include <algorithm>
 #include "app.hpp"
 #include <memory>
-#include "resource.h"
+#include "resource.hpp"
 
 app::app(HINSTANCE instance) :h_inst{instance} {
 	WNDCLASS wc{
