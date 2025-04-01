@@ -1,7 +1,7 @@
 #include <algorithm>
 #include "app.hpp"
 #include <memory>
-#include "resource.hpp"
+#include "resource.h"
 
 app::app(HINSTANCE instance) :h_inst{instance} {
 	WNDCLASS wc{
@@ -19,7 +19,7 @@ app::app(HINSTANCE instance) :h_inst{instance} {
 		.uCallbackMessage = WM_TRAYICON,
 		.hIcon = LoadIcon(nullptr, IDI_APPLICATION)
 	};
-	std::copy_n(TRAY_TIP.begin(), std::min(TRAY_TIP.size(), sizeof(nid.szTip) - 1), nid.szTip);
+	std::copy_n(TRAY_TIP.begin(), TRAY_TIP.size(), nid.szTip);
 	Shell_NotifyIcon(NIM_ADD, &nid);
 	play_silence();
 }

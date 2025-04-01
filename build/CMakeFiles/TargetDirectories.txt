@@ -1,0 +1,3 @@
+C:/Users/Quin/git/SleepSoundly/build/CMakeFiles/sleep_soundly.dir
+C:/Users/Quin/git/SleepSoundly/build/CMakeFiles/edit_cache.dir
+C:/Users/Quin/git/SleepSoundly/build/CMakeFiles/rebuild_cache.dir

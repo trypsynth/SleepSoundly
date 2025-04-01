@@ -1,0 +1,6 @@
+# ninja log v6
+11	61	7652433341322207	CMakeFiles/sleep_soundly.dir/src/resource.rc.res	710e1aeafb955c4f
+5	470	7652433341272208	CMakeFiles/sleep_soundly.dir/src/main.cpp.obj	d437568799b3adb
+8	600	7652433341302232	CMakeFiles/sleep_soundly.dir/src/single_instance.cpp.obj	c1fe480353b21d18
+2	602	7652433341242201	CMakeFiles/sleep_soundly.dir/src/app.cpp.obj	f493b43ac09f7956
+602	707	7652433347242911	sleep_soundly.exe	480ea80613df70b4
