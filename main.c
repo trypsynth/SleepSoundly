@@ -13,8 +13,6 @@ HWND hwnd;
 
 LRESULT CALLBACK wnd_proc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp);
 void show_tray_menu();
-#pragma function(memset)
-void* __cdecl memset(void* dest, int value, size_t count);
 
 int main() {
 	h_inst = GetModuleHandle(NULL);
@@ -84,11 +82,4 @@ void show_tray_menu() {
 		TrackPopupMenu(menu, TPM_RIGHTBUTTON, pt.x, pt.y, 0, hwnd, NULL);
 		DestroyMenu(menu);
 	}
-}
-
-// Allows for {0} initialization without the CRT.
-void* __cdecl memset(void* dest, int value, size_t count) {
-	unsigned char* p = dest;
-	while (count--) *p++ = (unsigned char)value;
-	return dest;
 }
