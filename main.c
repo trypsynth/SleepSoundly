@@ -74,12 +74,11 @@ LRESULT CALLBACK wnd_proc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp) {
 
 void show_tray_menu() {
 	HMENU menu = CreatePopupMenu();         
-	if (menu) {
-		AppendMenu(menu, MF_STRING, ID_EXIT, L"E&xit");
-		POINT pt;
-		GetCursorPos(&pt);
-		SetForegroundWindow(hwnd);
-		TrackPopupMenu(menu, TPM_RIGHTBUTTON, pt.x, pt.y, 0, hwnd, NULL);
-		DestroyMenu(menu);
-	}
+	if (!menu) return;
+	AppendMenu(menu, MF_STRING, ID_EXIT, L"E&xit");
+	POINT pt;
+	GetCursorPos(&pt);
+	SetForegroundWindow(hwnd);
+	TrackPopupMenu(menu, TPM_RIGHTBUTTON, pt.x, pt.y, 0, hwnd, NULL);
+	DestroyMenu(menu);
 }
